@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    
+    }
+
+    .left-box,
+    .left-box2 {
+      position: absolute;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #1d1d1b;
+      z-index: 55;
+    }
+
+
+    .right-box,
+    .right-box2 {
+      position: absolute;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #1d1d1b;
+      z-index: 55;
+    }
+
+    .right-box2,
+    .left-box2 {
+      background-color: #e10b18;
+      z-index: 2;
+    }
+
+
+
+    .custom-btn {
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px 50px;
+      font-family: 'Lato', sans-serif;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: block;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+      outline: none;
+      font-weight: 600;
+      text-decoration: none;
+
+
+    }
+
+
+    /* 15 */
+    .btn-15 {
+      background: transparent;
+      border: none;
+      z-index: 1;
+      text-align: center;
+      border: 1px solid #1d1d1b;
+      color: #1d1d1b;
+    }
+
+    .btn-15:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      inset: 0 0 0 0;
+      background: #e10b18;
+      z-index: -1;
+      transition: transform .5s ease;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+    }
+
+    .btn-15:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .btn-15:hover {
+      color: #fff;
+    }
+
+
+    .btn-15:active {}
+
+    .pages {
+      margin: 0 auto;
+      padding: 150px 15px;
+      max-width: 1200px;
+    }
+
+    .page-container {
+      display: flex;
+      flex-wrap: wrap;
+      grid-column-gap: 1.5%;
+    }
+
+    .col {
+      width: 23.5%;
+      margin-bottom: 20px;
+
+    }
+
+
+
+    @media (max-width:1100px) {
+      .col {
+        width: 32.3%;
+
+      }
+    }
+
+    @media (max-width:800px) {
+      .col {
+        width: 49%;
+
+      }
+
+      .btn-15 {
+        padding: 12px 5px;
+        font-size: 13px;
+      }
+
+      .pages {
+        padding: 75px 15px;
+      }
+
+    }
+
+    .logo {
+      margin-bottom: 50px;
+    }
+  </style>
+
+  <div class="left-box "></div>
+  <div class="right-box "></div>
+
+  <div class="left-box2 "></div>
+  <div class="right-box2"></div>
+
+  <section class="pages">
+
+    <div class="logo" style="text-align: center;">
+      <a href="index.html"> <img src="assets/img/logo.png" width="" alt=""></a>
+    </div>
+
+    <div class="page-container">
+      <div class="col">
+        <a href="index.html" class="btn-15 custom-btn" target="_blank">Anasayfa</a>
+      </div>
+      <div class="col">
+        <a href="siniflar.html" class="btn-15 custom-btn" target="_blank">Sınıflar</a>
+      </div>
+      <div class="col">
+        <a href="bize-katilin.html" class="btn-15 custom-btn" target="_blank">Bize Katılın</a>
+      </div>
+      <div class="col">
+        <a href="profil.html" class="btn-15 custom-btn" target="_blank">Profil</a>
+      </div>
+      <div class="col">
+        <a href="rehberlik-videolari.html" class="btn-15 custom-btn" target="_blank">Rehberlik Videoları</a>
+      </div>
+      <div class="col">
+        <a href="konu-detay.html" class="btn-15 custom-btn" target="_blank">Ders Detay</a>
+      </div>
+      <div class="col">
+        <a href="konu-alt-detay.html" class="btn-15 custom-btn" target="_blank">Ders Anlatım</a>
+      </div>
+      <div class="col">
+        <a href="kitap-magazasi.html" class="btn-15 custom-btn" target="_blank">Kitap Mağazası</a>
+      </div>
+      <div class="col">
+        <a href="urun-listeleme.html" class="btn-15 custom-btn" target="_blank">Ürün Listeleme</a>
+      </div>
+      <div class="col">
+        <a href="urun-detay.html" class="btn-15 custom-btn" target="_blank">Ürün Detay</a>
+      </div>
+      <div class="col">
+        <a href="sepetim.html" class="btn-15 custom-btn" target="_blank">Sepetim</a>
+      </div>
+      <div class="col">
+        <a href="checkout.html" class="btn-15 custom-btn" target="_blank">Adres Bilgileri</a>
+      </div>
+
+      <div class="col">
+        <a href="payment-options.html" class="btn-15 custom-btn" target="_blank">Ödeme Seçenekleri</a>
+      </div>
+      <div class="col">
+        <a href="order-confirm.html" class="btn-15 custom-btn" target="_blank">Sipariş Onay</a>
+      </div>
+      <div class="col">
+        <a href="my-orders.html" class="btn-15 custom-btn" target="_blank">Siparişlerim </a>
+      </div>
+      <div class="col">
+        <a href="jeton-puan-rozet.html" class="btn-15 custom-btn" target="_blank">Jeton - Puan </a>
+      </div>
+      <div class="col">
+        <a href="account-informations.html" class="btn-15 custom-btn" target="_blank">Hesap Bilgilerim</a>
+      </div>
+
+      <div class="col">
+        <a href="egitim-paketleri.html" class="btn-15 custom-btn" target="_blank">Eğitim Paketleri</a>
+      </div>
+
+      <div class="col">
+        <a href="egitim-paket-detay.html" class="btn-15 custom-btn" target="_blank">E.P. Detay</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+  <script>
+    gsap.to(".left-box", 1.5, {
+      xPercent: 0,
+      width: "0",
+      ease: "power3.inOut",
+      delay: 0.5
+
+    });
+
+    gsap.to(".right-box", 1.5, {
+      xPercent: 0,
+      width: "0",
+      ease: "power3.inOut",
+      delay: 0.5
+    });
+
+
+    gsap.to(".left-box2", 1.5, {
+      xPercent: 0,
+      width: "0",
+      ease: "power3.inOut",
+      delay: 0.7
+
+    });
+
+    gsap.to(".right-box2", 1.5, {
+      xPercent: 0,
+      width: "0",
+      ease: "power3.inOut",
+      delay: 0.7
+    });
+
+
+  </script>
+
+</body>
+
+</html>
